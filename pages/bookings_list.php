@@ -12,12 +12,12 @@ $result = mysqli_query($conn, $sql);
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Bookings</title></head>
+<head><meta charset="utf-8"><title>Bookings</title><link rel="stylesheet" href="/assessment_db/assets/app.css"></head>
 <body>
 <?php include "../nav.php"; ?>
  
 <h2>Bookings</h2>
-<p><a href="bookings_create.php">+ Create Booking</a></p>
+<p><a class="button-link" href="bookings_create.php">Create booking</a></p>
  
 <table border="1" cellpadding="8">
   <tr>
@@ -32,8 +32,9 @@ $result = mysqli_query($conn, $sql);
       <td><?php echo $b['hours']; ?></td>
       <td>₱<?php echo number_format($b['total_cost'],2); ?></td>
       <td><?php echo $b['status']; ?></td>
-      <td>
-        <a href="payment_process.php?booking_id=<?php echo $b['booking_id']; ?>">Process Payment</a>
+      <td class="table-actions">
+        <a href="payment_process.php?booking_id=<?php echo (int)$b['booking_id']; ?>">Process payment</a>
+        <a href="tools_list_assign.php">Manage tools</a>
       </td>
     </tr>
   <?php } ?>

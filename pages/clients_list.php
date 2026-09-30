@@ -4,12 +4,12 @@ $result = mysqli_query($conn, "SELECT * FROM clients ORDER BY client_id DESC");
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Clients</title></head>
+<head><meta charset="utf-8"><title>Clients</title><link rel="stylesheet" href="/assessment_db/assets/app.css"></head>
 <body>
 <?php include "../nav.php"; ?>
  
 <h2>Clients</h2>
-<p><a href="clients_add.php">+ Add Client</a></p>
+<p><a class="button-link" href="clients_add.php">Add client</a></p>
  
 <table border="1" cellpadding="8">
   <tr>

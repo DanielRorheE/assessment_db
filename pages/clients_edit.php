@@ -28,7 +28,7 @@ if (isset($_POST['update'])) {
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Edit Client</title></head>
+<head><meta charset="utf-8"><title>Edit Client</title><link rel="stylesheet" href="/assessment_db/assets/app.css"></head>
 <body>
 <?php include "../nav.php"; ?>
  

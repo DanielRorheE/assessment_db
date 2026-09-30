@@ -25,7 +25,7 @@ if (isset($_POST['create'])) {
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Create Booking</title></head>
+<head><meta charset="utf-8"><title>Create Booking</title><link rel="stylesheet" href="/assessment_db/assets/app.css"></head>
 <body>
 <?php include "../nav.php"; ?>
  

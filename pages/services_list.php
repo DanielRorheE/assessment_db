@@ -7,7 +7,7 @@ if (!$result) {
 ?>
 <!doctype html>
 <html>
-<head><meta charset="utf-8"><title>Services</title></head>
+<head><meta charset="utf-8"><title>Services</title><link rel="stylesheet" href="/assessment_db/assets/app.css"></head>
 <body>
 <?php include "../nav.php"; ?>
  
