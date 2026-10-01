@@ -1,5 +1,7 @@
 <?php
 include "../db.php";
+include "../auth.php";
+require_role('admin');
 $result = mysqli_query($conn, "SELECT * FROM services ORDER BY service_id DESC");
 if (!$result) {
   die("Unable to load services: " . mysqli_error($conn));

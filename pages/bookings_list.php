@@ -1,5 +1,7 @@
 <?php
 include "../db.php";
+include "../auth.php";
+require_role('admin');
  
 $sql = "
 SELECT b.*, c.full_name AS client_name, s.service_name

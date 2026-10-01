@@ -1,5 +1,7 @@
 <?php
 include "../db.php";
+include "../auth.php";
+require_role('admin');
 
 $escape = static function ($value) {
   return htmlspecialchars((string)$value, ENT_QUOTES, "UTF-8");

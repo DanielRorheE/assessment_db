@@ -1,5 +1,7 @@
 <?php
 include "../db.php";
+include "../auth.php";
+require_role('admin');
  
 $id = $_GET['id'];
  

@@ -1,5 +1,7 @@
 <?php
 include "../db.php";
+include "../auth.php";
+require_role('admin');
  
 $clients = mysqli_query($conn, "SELECT * FROM clients ORDER BY full_name ASC");
 $services = mysqli_query($conn, "SELECT * FROM services WHERE is_active=1 ORDER BY service_name ASC");
