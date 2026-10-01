@@ -654,6 +654,12 @@ form button {
   text-align: center;
 }
 
+.auth-submit-link {
+  display: flex;
+  width: 100%;
+  margin-top: 22px;
+}
+
 @keyframes auth-arrive {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }

@@ -149,6 +149,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !$registrationClosed) {
       <p class="auth-switch">
         <?php if ($mode === 'login') { ?>
           New <?php echo htmlspecialchars($role, ENT_QUOTES, 'UTF-8'); ?>? <a href="<?php echo $role; ?>_register.php">Register here</a>
+          <br><a href="forgot_password.php?role=<?php echo rawurlencode($role); ?>">Forgot password?</a>
         <?php } else { ?>
           Already registered? <a href="<?php echo $role; ?>_login.php">Log in</a>
         <?php } ?>
